@@ -1,0 +1,86 @@
+.circles {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+	justify-content: center;
+}
+
+.circle1, .circle2, .circle3 , .circle4, .circle5 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 70%;
+    padding-bottom: 5%;
+    height: 0;
+    width: 50%;
+    margin: 5px;
+    background-color:e9ecef ;
+    left: 0;
+    transition: margin-top 0.5s linear, left 0.5s linear;
+}
+
+.circle1 #Asthma,.circle2 #COPD, .circle3 #Lungcancer , .circle4 #Tuberculosis , .circle5 #Prediction{
+    line-height: 3;
+    margin-top: -2.4em;
+    padding-top: 13%;
+    color: #343a40;
+	font-size:20px;
+}
+
+.bubbles {
+  
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
+  
+  animation: changeBg 16s infinite;
+}
+
+@keyframes changeBg {
+	12.5%,100% {
+	 background-image: url('Promo-Facebook-Facebook cover photo.jpeg');
+	}
+	25% {
+	background-image: url('rsz_1rsz_20101018-pneumonia.jpg');
+	}
+	37.5% {
+	background-image: url('https://share-cdn-prod.azureedge.net/wp-content/uploads/2014/11/lung-cancer-symtoms-cough.jpg');
+	}
+	50% {
+	background-image: url('https://static01.nyt.com/images/2021/02/07/science/01SCI-BRODY-CLIMATE/01SCI-BRODY-CLIMATE-mobileMasterAt3x.jpg');
+	}
+	75% {
+	background-image: url('https://www.ucsf.edu/sites/default/files/styles/2014_wysiwyg_full/public/fields/field_insert_file/news/TB_lung_collage.jpg?itok=3cgbLcKs');
+	}
+	
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper .sidebar{
+    background: purple;
+    position: fixed;
+    top: 128;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
